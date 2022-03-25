@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <h5>{{ form }}</h5>
+    <input class="btn btn-primary" type="submit" value="Login">
+</form>
+    <h6>If You don't have account, You can create him  <a class="btn btn-primary" href="{% url 'register' %}">Registratin</a></h6>
+</body>
+</html>
