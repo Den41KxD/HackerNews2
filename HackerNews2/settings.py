@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'HackerNews2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'testtask',
-        'USER': 'postgres',
-        'PASSWORD': 'den41k123',
-        'HOST': 'db',
+        'NAME': 'damu1seuprj4ao',
+        'USER': 'jzzrsqsaagndyh',
+        'PASSWORD': '3fc684f20e2102459fce417237d59cc2b7e58388d1de31720322c663b9bb48e3',
+        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
