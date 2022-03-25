@@ -1,5 +1,9 @@
+setup:
+  addons:
+    - plan: heroku-postgresql:testtask
+      as: DATABASE
 build:
   docker:
     web: Dockerfile
 run:
-  web: docker-compose up
+  web: python manage.py migrate
