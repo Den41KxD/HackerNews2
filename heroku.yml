@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  worker: bash -c 'python manage.py migrate & python manage.py runserver'
+  web: python manage.py runserver
