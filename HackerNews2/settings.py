@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7cn*#jrdsyiwhr0i+4%kld91j8ai0#c8-1jhn4kz@7f1cym1t5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -46,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'HackerNews2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'damu1seuprj4ao',
-        'USER': 'jzzrsqsaagndyh',
-        'PASSWORD': '3fc684f20e2102459fce417237d59cc2b7e58388d1de31720322c663b9bb48e3',
-        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+        'NAME': 'testtask',
+        'USER': 'postgres',
+        'PASSWORD': 'den41k123',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
