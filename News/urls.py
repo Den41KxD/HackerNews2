@@ -6,6 +6,8 @@ from .views import Login, Register, Logout, PostView, CommentCreatedView, Upvote
 
 from API.resources import UserViewSet, PostViewSet, CommentViewSet
 
+from django.views.decorators.csrf import csrf_exempt
+
 router = SimpleRouter()
 router.register('user', UserViewSet)
 router.register('post', PostViewSet)
